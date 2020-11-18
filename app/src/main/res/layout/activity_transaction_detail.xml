@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    tools:context="com.example.kamhoss.transactionapp.TransactionDetail">
+
+    <TextView
+        android:id="@+id/detail_username"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="NAME"/>
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Spinner
+        android:id="@+id/recipient_spinner"
+        android:layout_width="157dp"
+        android:layout_height="50dp"
+     />
+
+    <EditText
+        android:id="@+id/amount_sending"
+        android:hint="$"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="8dp"/>
+
+    <Button
+        android:padding="3dp"
+        android:id="@+id/_send_button"
+        android:text="send"
+        android:layout_gravity="right"
+        android:background="@drawable/send_button_shape"
+        android:textColor="@android:color/white"
+        android:layout_width="70dp"
+        android:layout_height="50dp"/>
+
+
+
+</LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:paddingLeft="8dp"
+        android:textColor="@android:color/black"
+        android:text="Transaction(s) Detail"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/trans_detailv_recy"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
